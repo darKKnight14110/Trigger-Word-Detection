@@ -4,7 +4,6 @@ In this assignment, you will construct a speech dataset and implement an algorit
 
 For this exercise, our trigger word will be "Activate." Every time it hears you say "activate," it will make a "chiming" sound. By the end of this assignment, you will be able to record a clip of yourself talking, and have the algorithm trigger a chime when it detects you saying "activate." 
 
-<img src="images/sound.png" style="width:1000px;height:150px;">
 
 In this assignment you will learn to: 
 - Structure a speech recognition project
