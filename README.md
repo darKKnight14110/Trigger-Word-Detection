@@ -4,6 +4,7 @@ In this assignment, you will construct a speech dataset and implement an algorit
 
 For this exercise, our trigger word will be "Activate." Every time it hears you say "activate," it will make a "chiming" sound. By the end of this assignment, you will be able to record a clip of yourself talking, and have the algorithm trigger a chime when it detects you saying "activate." 
 
+![image](https://github.com/user-attachments/assets/fe48b604-81b8-42f4-bf8f-78d828caef9f)
 
 In this assignment you will learn to: 
 - Structure a speech recognition project
@@ -79,7 +80,8 @@ This is another reason for synthesizing the training data: It's relatively strai
 
 Here's a figure illustrating the labels **y<sup>t</sup>**, for a clip which we have inserted "activate", "innocent", activate", "baby." Note that the positive labels "1" are associated only with the positive words. 
 
-<img src="images/label_diagram.png" style="width:500px;height:200px;">
+![image](https://github.com/user-attachments/assets/5e35ad66-aa2b-45a8-ac14-41214593460e)
+
 
 
 ## 1.4 - Development set
@@ -95,8 +97,8 @@ The model will use 1-D convolutional layers, GRU layers, and dense layers.
 ## 2.1 - Build the model
 
 Here is the architecture we will use. Take some time to look over the model and see if it makes sense. 
+![image](https://github.com/user-attachments/assets/7dbf99cd-4002-496a-acfa-7aa749a58944)
 
-<img src="images/model.png" style="width:600px;height:600px;">
 
 One key step of this model is the 1D convolutional step (near the bottom of Figure 3). It inputs the 5511 step spectrogram, and outputs a 1375 step output, which is then further processed by multiple layers to get the final **T<sub>y</sub> = 1375** step output. This layer plays a role similar to the 2D convolutions you saw in Course 4, of extracting low-level features and then possibly generating an output of a smaller dimension. 
 
