@@ -107,7 +107,3 @@ Computationally, the 1-D conv layer also helps speed up the model because now th
 Note that we use a uni-directional RNN rather than a bi-directional RNN. This is really important for trigger word detection, since we want to be able to detect the trigger word almost immediately after it is said. If we used a bi-directional RNN, we would have to wait for the whole 10sec of audio to be recorded before we could tell if "activate" was said in the first second of the audio clip.  
 
 
-**Here's what you should remember** :
-- Data synthesis is an effective way to create a large training set for speech problems, specifically trigger word detection. 
-- Using a spectrogram and optionally a 1D conv layer is a common pre-processing step prior to passing audio data to an RNN, GRU or LSTM.
-- An end-to-end deep learning approach can be used to built a very effective trigger word detection system.
